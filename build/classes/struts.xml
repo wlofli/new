@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+  <!DOCTYPE struts PUBLIC
+      "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+      "http://struts.apache.org/dtds/struts-2.0.dtd">           
+<struts>
+	<constant name="struts.i18n.encoding" value="UTF-8"></constant>	
+	<package name="jinyou.action" namespace="/" extends="struts-default">
+		<action name="Customer" class="jinyou.action.CustomerAction">
+			<result name="load">/Web/suc.jsp</result>
+			<result name="suc">/Web/suc.jsp</result>
+			<result name="fail">/Web/fail.jsp</result>
+		</action>
+	</package>
+	<package name="jinyou.action.json" extends="json-default" namespace="/">  
+        <action name="Customerjson"  class="jinyou.action.json.CustomerAction" >  
+            <result type="json" name="suc">                  
+                <param name="root">dataMap</param>                        
+            </result>  
+        </action>
+        <action name="bus"  class="jinyou.action.json.BusinessAction" >  
+            <result type="json" name="suc">                  
+                <param name="root">dataMap</param>                        
+            </result>  
+        </action>
+        <action name="area"  class="jinyou.action.json.AreaAction" >  
+            <result type="json" name="suc">                  
+                <param name="root">dataMap</param>                        
+            </result>  
+        </action> 
+        <action name="pro"  class="jinyou.action.json.ProductAction" >  
+            <result type="json" name="suc">                  
+                <param name="root">dataMap</param>                        
+            </result>  
+        </action>
+        <action name="rec"  class="jinyou.action.json.RecordsAction" >  
+            <result type="json" name="suc">                  
+                <param name="root">dataMap</param>                        
+            </result>  
+        </action>     
+    </package>
+</struts>

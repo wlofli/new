@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-10-13 10:39:53 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="jinyou.model.Ptype" table="ptype" catalog="jinyou">
+        <id name="ptType" type="int">
+            <column name="pt_type" />
+            <generator class="assigned" />
+        </id>
+        <property name="ptName" type="string">
+            <column name="pt_name" length="64" />
+        </property>
+        <property name="ptStay" type="string">
+            <column name="pt_stay" length="256" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-10-15 16:41:35 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="jinyou.model.Business" table="business" catalog="jinyou">
+        <id name="BSalerid" type="int">
+            <column name="b_salerid" />
+            <generator class="assigned" />
+        </id>
+        <property name="BSalername" type="string">
+            <column name="b_salername" length="128" />
+        </property>
+        <property name="BSalertype" type="java.lang.Integer">
+            <column name="b_salertype" />
+        </property>
+        <property name="BUrl" type="string">
+            <column name="b_url" length="256" />
+        </property>
+        <property name="BDetail" type="string">
+            <column name="b_detail" length="256" />
+        </property>
+        <property name="BUsergrade" type="java.lang.Integer">
+            <column name="b_usergrade" />
+        </property>
+        <property name="BLat" type="java.lang.Double">
+            <column name="b_lat" precision="10" scale="6" />
+        </property>
+        <property name="BLog" type="java.lang.Double">
+            <column name="b_log" precision="10" scale="6" />
+        </property>
+        <property name="BTel" type="string">
+            <column name="b_tel" length="20" />
+        </property>
+        <property name="BAccount" type="string">
+            <column name="b_account" length="256" />
+        </property>
+        <property name="BUsercredit" type="java.lang.Integer">
+            <column name="b_usercredit" />
+        </property>
+    </class>
+</hibernate-mapping>

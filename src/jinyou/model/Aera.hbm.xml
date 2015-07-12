@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-10-13 10:39:53 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="jinyou.model.Area" table="aera" catalog="jinyou">
+        <id name="AId" type="int">
+            <column name="a_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="ALattop" type="java.lang.Double">
+            <column name="a_lattop" precision="10" scale="6" />
+        </property>
+        <property name="ALongtop" type="java.lang.Double">
+            <column name="a_longtop" precision="10" scale="6" />
+        </property>
+        <property name="ALatright" type="java.lang.Double">
+            <column name="a_latright" precision="10" scale="6" />
+        </property>
+        <property name="ALongright" type="java.lang.Double">
+            <column name="a_longright" precision="10" scale="6" />
+        </property>
+        <property name="ALatleft" type="java.lang.Double">
+            <column name="a_latleft" precision="10" scale="6" />
+        </property>
+        <property name="ALongleft" type="java.lang.Double">
+            <column name="a_longleft" precision="10" scale="6" />
+        </property>
+        <property name="ALatbottom" type="java.lang.Double">
+            <column name="a_latbottom" precision="10" scale="6" />
+        </property>
+        <property name="ALongbottom" type="java.lang.Double">
+            <column name="a_longbottom" precision="10" scale="6" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-10-16 15:43:31 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="jinyou.model.Records" table="records" catalog="jinyou">
+        <id name="ROrderid" type="java.lang.Integer">
+            <column name="r_orderid" />
+            <generator class="identity" />
+        </id>
+        <property name="RBuyer" type="java.lang.Integer">
+            <column name="r_buyer" />
+        </property>
+        <property name="RProductid" type="java.lang.Integer">
+            <column name="r_productid" />
+        </property>
+        <property name="RUuid" type="string">
+            <column name="r_uuid" length="32" />
+        </property>
+        <property name="ROrdertime" type="date">
+            <column name="r_ordertime" length="10" />
+        </property>
+        <property name="RCompletetime" type="date">
+            <column name="r_completetime" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

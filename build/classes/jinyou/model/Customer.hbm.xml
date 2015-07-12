@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-10-13 10:39:53 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="jinyou.model.Customer" table="customer" catalog="jinyou">
+        <id name="CUsername" type="string">
+            <column name="c_username" length="20" />
+            <generator class="assigned" />
+        </id>
+        <property name="CUserid" type="java.lang.Integer">
+            <column name="c_userid" />
+        </property>
+        <property name="CAlias" type="string">
+            <column name="c_alias" length="20" />
+        </property>
+        <property name="CPassword" type="string">
+            <column name="c_password" length="32" />
+        </property>
+        <property name="CUsertype" type="java.lang.Integer">
+            <column name="c_usertype" />
+        </property>
+        <property name="CAddr" type="string">
+            <column name="c_addr" length="256" />
+        </property>
+        <property name="CUrl" type="string">
+            <column name="c_url" length="256" />
+        </property>
+        <property name="CCreatetime" type="date">
+            <column name="c_createtime" length="10" />
+        </property>
+        <property name="CUsergrade" type="java.lang.Integer">
+            <column name="c_usergrade" />
+        </property>
+        <property name="CUsercredit" type="java.lang.Integer">
+            <column name="c_usercredit" />
+        </property>
+        <property name="CLat" type="java.lang.Double">
+            <column name="c_lat" precision="10" scale="0" />
+        </property>
+        <property name="CLong" type="java.lang.Double">
+            <column name="c_long" precision="10" scale="0" />
+        </property>
+        <property name="CCapturearea" type="java.lang.Integer">
+            <column name="c_capturearea" />
+        </property>
+    </class>
+</hibernate-mapping>
